@@ -4,54 +4,31 @@
   overflow: none;
 
   height: 100vh;
+  width: 100%;
 
-  background-image: url(../../assets/introduction.jpg);
-  background-size: 100vw 100vh;
+  background-image: url(../../assets/BG.jpg);
+  background-size: 100%;
+  
+  
 
-  color: white;
-
-  &__title {
-    @include Center;
-    flex-flow: column;
+  &__left {
+    position: absolute;
 
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    background-color: transparentize($color: #000000, $amount: 0.25);
 
+    clip-path: polygon(0 0, 70% 0%, 40% 100%, 0% 100%);
+    ;
+  }
 
-    &-element1 {
-      margin-bottom: 5rem;
+  &__right {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparentize($Blue900, $amount: 0.25);
 
-      font-size: 48px;
-      font-weight: 800;
-
-      padding-right: 16rem; 
-    }
-
-
-
-    &-element2 {
-
-      &-wrap {
-        @include Center;
-        box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.5);
-
-        margin-bottom: 5rem;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background-color: #000;
-      }
-    }
-
-
-
-    &-element3 {
-
-      color: #000;
-      font-size: 48px;
-      font-weight: 800;
-
-      padding-left: 16rem;
-    }
+    clip-path: polygon(70% 0, 100% 0, 100% 100%, 40% 100%);
+    ;
   }
 }
