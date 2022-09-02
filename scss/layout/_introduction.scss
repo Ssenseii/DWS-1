@@ -8,8 +8,8 @@
 
   background-image: url(../../assets/BG.jpg);
   background-size: 100%;
-  
-  
+
+
 
   &__left {
     position: absolute;
@@ -20,15 +20,15 @@
 
     clip-path: polygon(0 0, 70% 0%, 40% 100%, 0% 100%);
 
-    &-date{
+    &-date {
       color: #ccc;
       margin-top: 10rem;
       margin-left: 8rem;
       margin-bottom: 2rem;
     }
-    
 
-    &-title{
+
+    &-title {
       font-size: 6rem;
       font-weight: 900;
       letter-spacing: 1.75;
@@ -38,27 +38,57 @@
       margin-bottom: 4rem;
     }
 
-    &-summary{
+    &-summary {
       margin-left: 10rem;
-      
+      margin-bottom: 6rem;
+
       color: #ddd;
       font-size: 24px;
       width: 30%;
     }
+
+    &-action {
+      border: 1px solid green;
+      margin-left: 8rem;
+
+      &-btn {
+        width: 20rem;
+        height: 4rem;
+        border-radius: 10px;
+
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 1.25px;
+
+        margin-right: 6rem;
+      }
+
+      &-rating{
+        color: #ddd;
+        text-decoration: none;
+        font-size: 18px;
+
+        &:hover{
+          cursor: pointer;
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   &__right {
-    z-index: 3;
+
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: transparentize($Gray900, $amount: 0.1);
+    background-color: transparentize($color: #000000, $amount: 0.25);
 
     clip-path: polygon(70% 0, 100% 0, 100% 100%, 85% 100%);
-    
+
   }
 
-  &__top{
+  &__top {
     position: absolute;
     z-index: 2;
     height: 100vh;
