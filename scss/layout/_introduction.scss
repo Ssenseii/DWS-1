@@ -19,7 +19,17 @@
     background-color: transparentize($color: #000000, $amount: 0.25);
 
     clip-path: polygon(0 0, 70% 0%, 40% 100%, 0% 100%);
-    ;
+    
+
+    &-title{
+      font-size: 8rem;
+      font-weight: 900;
+      letter-spacing: 1.75;
+      color: #fff;
+
+      margin-top: 10rem;
+      margin-left: 8rem;
+    }
   }
 
   &__right {
